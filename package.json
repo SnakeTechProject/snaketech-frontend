@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "lint": "npx eslint . --cache",
     "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "sass-dev": "sass --watch --update --style=expanded src/sass:src/css"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -26,6 +27,7 @@
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
+    "sass": "^1.54.9",
     "vite": "^3.1.0"
   }
 }
