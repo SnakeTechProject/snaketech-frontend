@@ -1,4 +1,4 @@
-V# snaketech-frontend
+# snaketech-frontend
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -59,7 +59,7 @@ Observações:
 
 ## Commit das alterações
 
-<!-- Necessita de revisão sobre a padronização de commit's e comandos de cobrança / não testei essa parte! -->
+Necessita de revisão sobre a padronização de commit's e comandos de cobrança / não testei essa parte!
 
 Após finalizar suas alterações e se certificar que todos os testes estão passando com o comando geral `prepare`, chegou a hora de fazer o commit das suas alterações.
 
@@ -69,10 +69,4 @@ Para ser auxiliado no padrão de commit que utilizamos, rode o comando abaixo e 
 yarn pre-commit
 ```
 
-<br><br>
-#### Revisar se vamos padronizar o git flow ou fazer manual
 
-git flow init -d  instalar o git flow em develop
-git flow feature start register      criar a feature e iniciar o register
-git branch
-git flow feature finish register    finalisar o register e enviar os comittes da branch develop para a branch main
