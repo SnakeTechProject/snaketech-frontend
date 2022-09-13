@@ -1,6 +1,11 @@
 import react from '@vitejs/plugin-react';
-import path from 'node:path';
+import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
+
+const additionalDataDir = resolve(__dirname, './src/styles/variables');
+
+const replaceDir = (dir) => dir.replace(/[\\]/g, '/');
+const isWindows = () => process.platform.includes('win');
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,10 +13,9 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "${path.resolve(
-          __dirname,
-          './src/styles/variables',
-        )}";`,
+        additionalData: `@import "${
+          isWindows() ? replaceDir(additionalDataDir) : additionalDataDir
+        }";`,
       },
     },
   },
