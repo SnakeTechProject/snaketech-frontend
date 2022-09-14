@@ -1,0 +1,54 @@
+header{
+  background-color: $gray-dark;
+  padding:0 135px;
+
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img{
+      max-width: 70px;
+
+    }
+
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+
+    input{
+      background: none;
+      border: none;
+      border-bottom: 1px solid $red;
+      padding-left:30px;
+      padding-bottom: 10px;
+      color: $white;
+      &:focus{
+        outline: none;
+      }
+
+    }
+    .search{
+      position: relative;
+
+    }
+    .iconePesquisa{
+      color: $red;
+     margin-right: -25px;
+     position: absolute;
+      bottom: 10px;
+    }
+
+
+
+  }
+
+
+
+}
+
+
+
