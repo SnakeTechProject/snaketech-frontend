@@ -1,0 +1,50 @@
+.cardContainer {
+  background-color: $gray-dark;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 343px;
+  height: 324px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.imgCard {
+  width: 311px;
+  height: 160px;
+  border-radius: 8px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  .textTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $gray-light;
+  }
+  .textShort {
+    font-weight: 400;
+    line-height: 24px;
+    color: $gray-light;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 16px;
+  font-family: 'Inter', sans-serif;
+  .btn {
+    width: 80px;
+    background-color: $red;
+    padding: 3px;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border: transparent;
+    letter-spacing: 0.3px;
+  }
+}
