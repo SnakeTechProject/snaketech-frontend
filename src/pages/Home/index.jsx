@@ -5,7 +5,7 @@ export function Home() {
   const cards = [
     {
       img: {
-        imgUrl: '../../src/assets/img/cardPython.png',
+        imgUrl: '/assets/img/cardPython.png',
         title: 'Você conhece o Python?'
       },
       title: 'Você conhece o Python?',
@@ -13,7 +13,7 @@ export function Home() {
     },
     {
       img: {
-        imgUrl: '../../src/assets/img/cardCss.png',
+        imgUrl: '/assets/img/cardCss.png',
         title: 'O que é CSS?'
       },
       title: 'O que é CSS?',
@@ -21,7 +21,7 @@ export function Home() {
     },
     {
       img: {
-        imgUrl: '../../src/assets/img/cardFront.png',
+        imgUrl: '/assets/img/cardFront.png',
         title: 'O que faz um Front-end?'
       },
       title: 'O que faz um Front-end?',
