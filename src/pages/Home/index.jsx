@@ -1,3 +1,4 @@
+import { Challenge } from '../../components/Challenge';
 import { BlogCard } from '../../components/BlogCard';
 import styles from './home.module.scss';
 
@@ -31,6 +32,7 @@ export function Home() {
   return (
     <div className={styles.wrapper}>
       <h1>Home SnakeTech</h1>
+      <Challenge/>
       <div className={styles.cardsBlogContainer}>
         {cards.map((card, index) => <BlogCard card={card} key={index} />) }
       </div>
