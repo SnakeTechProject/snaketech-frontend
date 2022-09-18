@@ -1,0 +1,31 @@
+.cardContainer {
+  background-color: $gray-light;
+  border-radius: 6px;
+  width: 319px;
+  height: 126px;
+  display: flex;
+    .imgCard {
+      width: 136px;
+      height: 126px;
+      border-radius: 6px;
+  }
+    .textContainer {
+      .text {
+        font-size: 0.75rem;
+        font-weight: 400;
+        color: $gray-dark;
+        letter-spacing: 0.05rem;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        line-height: 25px;
+        padding-left: 13px;
+      }
+    }
+}
+
+
+
+

@@ -1,0 +1,19 @@
+.jobsContainer {
+  background-color: $gray-light;
+  border-radius: 6px;
+  width: 319px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+    .role, .time {
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: $gray-dark;
+      letter-spacing: 0.05rem;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+  }
+}
