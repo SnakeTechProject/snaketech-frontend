@@ -1,3 +1,4 @@
+import { Challenge } from '../../components/Challenge';
 import { BlogCard } from '../../components/BlogCard';
 import { NewsCard } from '../../components/NewsCard';
 import { JobsCard } from '../../components/JobsCard';
@@ -65,6 +66,7 @@ export function Home() {
   return (
     <div className={styles.wrapper}>
       <h1>Home SnakeTech</h1>
+      <Challenge/>
 
       <div className={styles.cardsBlogContainer}>
         {cardsBlog.map((card, index) => <BlogCard imgUrl={card.imgUrl} title={card.title} short={card.short} key={index} />)}
