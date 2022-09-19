@@ -1,8 +1,8 @@
-import styles from './challenge.module.scss'
-import {Link} from 'react-router-dom'
+import styles from './challenge.module.scss';
+import { Link } from 'react-router-dom';
 
 export function Challenge() {
-  return(
+  return (
     <div className={styles.challenge}>
       <div className={styles.text}>
         <h1>Gosta de desafios?</h1>
@@ -24,9 +24,10 @@ export function Challenge() {
           <img src="/assets/img/secundary/robo.png" alt="" />
         </div>
 
-      <Link to="/"><span>Participe aqui</span></Link>
+        <Link to="/challenge">
+          <span>Participe aqui</span>
+        </Link>
       </div>
-
     </div>
   );
 }
