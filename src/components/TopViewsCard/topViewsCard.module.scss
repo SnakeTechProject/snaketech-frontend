@@ -1,0 +1,18 @@
+.cardContainer {
+  background-color: $gray-light;
+  border-radius: 10px;
+  width: 319px;
+  height: 43px;
+  display: flex;
+    .text {
+      color: $black;
+      font-size: 1.125rem;
+      font-weight: 400;
+      letter-spacing: 0.05rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration-line: underline;
+    }
+}
