@@ -8,6 +8,18 @@
   justify-content: space-evenly;
   padding: 11px;
   width: 100%;
+  position: relative;
+}
+
+.cardsBlogContainer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $white;
+  z-index: -1;
 }
 
 .apiContainer {
