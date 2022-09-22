@@ -1,5 +1,82 @@
 .wrapper {
   flex: 1;
   margin: 0 auto;
-  width: 32.5rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 28px 4rem;
+  width: 100%;
+
+  form {
+    width: 100%;
+  }
+
+  .title {
+    margin: 3.75rem 0 0;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .profileWrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 2rem 0 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .profilePlaceholder {
+      background-color: $gray-medium;
+      border-radius: 50%;
+      width: 12rem;
+      height: 12rem;
+
+      display: grid;
+      place-content: center;
+
+      svg {
+        width: 4.275rem;
+      }
+    }
+
+    .profileImg {
+      width: 100%;
+      border-radius: 50%;
+      width: 12rem;
+      height: 12rem;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .inputWrapper {
+    width: min(32.5rem, 100%);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    background-color: $red;
+    color: $white;
+    border: none;
+
+    &.profileBtn {
+      width: 6.125rem;
+      padding: 8px 0;
+      border-radius: 4px;
+    }
+
+    &.submitBtn {
+      width: 12.125rem;
+      padding: 12px 0;
+      border-radius: 12px;
+      margin: 20px auto 0;
+    }
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
 }
