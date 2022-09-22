@@ -2,4 +2,75 @@
   flex: 1;
   margin: 0 auto;
   width: 32.5rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 4rem;
+
+  form {
+    width: 100%;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin: 3rem 0 2rem;
+
+    strong {
+      font-weight: 400;
+    }
+  }
+
+  .resetPassword {
+    align-self: flex-end;
+  }
+
+  .btnWrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    span {
+      margin: 10px 0;
+    }
+
+    button,
+    a {
+      width: 100%;
+      max-width: 25rem;
+      color: $white;
+      border-radius: 8px;
+      padding: 14px 18px;
+      transition: all 200ms;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+
+      svg {
+        width: 20px;
+      }
+
+      &.filledBtn {
+        background-color: $red;
+        border: none;
+
+        &:hover {
+          filter: brightness(0.9);
+        }
+      }
+
+      &.borderBtn {
+        background-color: transparent;
+        border: 1px solid $red;
+
+        &:hover {
+          background-color: $red;
+        }
+      }
+    }
+  }
 }
