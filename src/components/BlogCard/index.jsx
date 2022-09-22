@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './blogCard.module.scss';
 
 export function BlogCard({imgUrl, title, short}) {
+  const id = {imgUrl, title, short}.id;
   return (
     <div className={styles.cardContainer}>
       <img
