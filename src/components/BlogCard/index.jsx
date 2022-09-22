@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './blogCard.module.scss';
 
 export function BlogCard({imgUrl, title, short}) {
+  const id = {imgUrl, title, short}.id;
   return (
     <div className={styles.cardContainer}>
       <img
@@ -14,7 +16,9 @@ export function BlogCard({imgUrl, title, short}) {
         <div className={styles.textShort}>{short}</div>
       </div>
       <div className={styles.buttonContainer}>
-        <button className={styles.btn}>Leia mais</button>
+        <Link to={`/blog/${id}`} className={styles.btn}>
+          Leia mais
+        </Link>
       </div>
     </div>
   );

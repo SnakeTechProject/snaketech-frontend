@@ -1,3 +1,68 @@
 .wrapper {
   flex: 1;
+  margin: 0 auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 28px 4rem;
+
+  form {
+    width: 100%;
+  }
+
+  .titleWrapper {
+    width: min(40.5rem, 95vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 5rem;
+
+    img {
+      width: min(20rem, 80vw);
+    }
+
+    .title {
+      margin: 3.75rem 0 0;
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      width: 100%;
+      margin-left: 0;
+
+      .title {
+        margin: 0 0 2.75rem;
+      }
+
+      img {
+        order: -1;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .inputWrapper {
+    width: min(32.5rem, 100%);
+    margin: 0 auto;
+  }
+
+  .filledBtn {
+    width: 100%;
+    max-width: 25rem;
+    color: $white;
+    border-radius: 8px;
+    padding: 14px 0;
+    transition: all 200ms;
+    background-color: $red;
+    border: none;
+    display: block;
+    margin: 1.25rem auto 0;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
 }
