@@ -8,4 +8,63 @@
   justify-content: space-evenly;
   padding: 11px;
   width: 100%;
+  position: relative;
+}
+
+.cardsBlogContainer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $white;
+  z-index: -1;
+}
+
+.apiContainer {
+  background-color: $black;
+  display: flex;
+  justify-content: space-evenly;
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $white;
+    border-bottom: 3px solid #FF3D00;
+    margin-top: 30px;
+    margin-bottom: 34px;
+    text-align: center;
+    width: min-content;
+    white-space: nowrap;
+  }
+  .newsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      .cardsNewsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+  }
+  .jobsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      .cardsJobsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+  }
+  .topViewContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      .cardsTopViews {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+  }
 }
