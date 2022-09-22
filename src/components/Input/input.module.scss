@@ -1,4 +1,7 @@
 .wrapper {
+  margin: 0 auto;
+  width: 100%;
+
   label {
     display: block;
     color: $white;
@@ -13,9 +16,5 @@
     border: 2px solid transparent;
     width: 100%;
     margin-bottom: 18px;
-
-    &:invalid {
-      border-color: $red;
-    }
   }
 }
