@@ -68,10 +68,15 @@ export function Home() {
         <form>
           {inputsAndLabels.map((item, i) => (
             <>
-              <label key={i} htmlFor={item[1]}>{item[0]}</label>
-              <input key={i+1} id={item[1]} placeholder={item[2]} />
+              <fieldset key={i}>
+                <label key={i + 1} htmlFor={item[1]}>
+                  {item[0]}
+                </label>
+                <input key={i + 2} id={item[1]} placeholder={item[2]} />
+              </fieldset>
             </>
           ))}
+          <button type="submit">Enviar</button>
         </form>
       </section>
     </div>
