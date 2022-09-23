@@ -36,15 +36,17 @@
   align-self: flex-end;
   margin-right: 16px;
   font-family: 'Inter', sans-serif;
+
   .btn {
     width: 80px;
     background-color: $red;
     padding: 3px;
     border-radius: 10px;
-    color: #FFF;
+    color: #fff;
     font-size: 0.875rem;
     font-weight: 700;
     border: transparent;
     letter-spacing: 0.3px;
+    text-align: center;
   }
 }
