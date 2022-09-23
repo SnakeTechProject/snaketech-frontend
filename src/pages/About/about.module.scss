@@ -1,5 +1,68 @@
 .wrapper {
   flex: 1;
+<<<<<<< HEAD
   margin: 0 auto;
   max-width: 73rem;
+=======
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+
+  .about {
+    .title {
+      font-size: 32px;
+      line-height: 38px;
+      width: 403px;
+      margin-bottom: 70px;
+    }
+    .list {
+      width: 445px;
+      height: 140px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  .card {
+    background-color: $gray-dark;
+    box-shadow: 0px 4px 0px 4px rgba($color: #565555, $alpha: 1);
+    border-radius: 6px;
+    width: 619px;
+    height: 418px;
+    padding: 24px;
+
+    h2 {
+      width: 197px;
+      height: 38px;
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    .textImg {
+      display: flex;
+      align-items: center;
+
+      p {
+        width: 285px;
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+
+    .btn {
+      background-color: $red;
+      border: none;
+      padding: 5px 70px;
+      border-radius: 20px;
+      font-size: 24px;
+      line-height: 28px;
+      color: $gray-light;
+      margin-top: 53px;
+      margin-left: 135px;
+    }
+  }
+>>>>>>> 49d729df551b8aee9405cd54972b8d1ac1ae63ad
 }
