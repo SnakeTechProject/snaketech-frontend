@@ -26,6 +26,7 @@
   background-color: $black;
   display: flex;
   justify-content: space-evenly;
+
   h1 {
     font-size: 1.5rem;
     font-weight: 500;
@@ -37,6 +38,7 @@
     width: min-content;
     white-space: nowrap;
   }
+
   .newsContainer {
     display: flex;
     flex-direction: column;
@@ -47,6 +49,7 @@
         gap: 24px;
       }
   }
+
   .jobsContainer {
     display: flex;
     flex-direction: column;
@@ -57,6 +60,7 @@
         gap: 24px;
       }
   }
+
   .topViewContainer {
     display: flex;
     flex-direction: column;
@@ -66,5 +70,24 @@
         flex-direction: column;
         gap: 24px;
       }
+  }
+}
+
+.formHomePage {
+  background-color: white;
+  color: black;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  h2 {
+    text-align: left;
+    width: 19%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
   }
 }

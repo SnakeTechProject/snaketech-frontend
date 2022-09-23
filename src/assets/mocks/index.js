@@ -57,4 +57,10 @@ const cardsViews = [
   },
 ];
 
-export { cardsBlog, cardsJobs, cardsNews, cardsViews }
+const inputsAndLabels = [
+  ['Nome*', 'Nome', 'Qual o seu nome?'],
+  ['E-mail*', 'E-mail', 'Seu melhor e-mail'],
+  ['Mensagem*', 'Mensagem', 'Digite sua mensagem'],
+];
+
+export { cardsBlog, cardsJobs, cardsNews, cardsViews, inputsAndLabels };
