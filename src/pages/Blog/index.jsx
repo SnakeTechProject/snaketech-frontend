@@ -38,7 +38,6 @@ export function Blog() {
         </div>
       </div>
 
-
       <h2 className={styles.cardsDescription}>Você pode gostar de ler também</h2>
       <div className={styles.cardsBlogContainer}>
         {cardsBlog.map((card, index) => <BlogCard imgUrl={card.imgUrl} title={card.title} short={card.short} key={index}/>)}
