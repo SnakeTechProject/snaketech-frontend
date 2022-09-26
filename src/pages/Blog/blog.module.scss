@@ -3,3 +3,96 @@
   margin: 0 auto;
   max-width: 73rem;
 }
+
+.news{
+  width: 60%;
+  background-color:
+  #D9D9D9;
+  padding: 3% 8%;
+  border-radius: 10px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0%);
+  position: relative;
+
+  h1{
+    color: $black;
+    font-size: 2rem;
+  }
+
+  .container{
+    width: 100%;
+    margin-top: 6%;
+
+    .imgShape{
+      border-radius: 5px;
+      overflow: hidden;
+      img{
+        width: 100%;
+      }
+    }
+
+
+    .textBox{
+      width: 100%;
+      color: $gray-dark;
+      margin-top: 5%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      position: relative;
+    }
+  }
+}
+
+.cardsDescription{
+  width: fit-content;
+  color: $white;
+  font-weight: 300;
+  margin: 5% 20% 2.5% 20%;
+  border-bottom: 3px solid $red;
+}
+
+.cardsBlogContainer {
+  background-color: $white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 11px;
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+
+  .news{
+    width: 93%;
+    text-align: center;
+
+    h1{
+      margin-top: 1.5%;
+    }
+
+    .textBox{
+      text-align: left;
+    }
+
+  }
+
+  .cardsBlogContainer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .news{
+    h1{
+      font-size: 1rem;
+    }
+
+  }
+  .cardsDescription{
+    font-size: 0.9rem;
+  }
+}
