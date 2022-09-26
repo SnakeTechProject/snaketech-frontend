@@ -4,9 +4,16 @@ import { FacebookIcon } from '../../components/FacebookIcon';
 import { FcGoogle } from 'react-icons/fc';
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { signInSchema } from '../../utils/FormSchemas';
 
 export function SignIn() {
-  const { reset, register, handleSubmit } = useForm();
+  const {
+    reset,
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({ resolver: zodResolver(signInSchema) });
 
   function onSubmit(data) {
     console.log(data);
@@ -22,11 +29,13 @@ export function SignIn() {
       <form onSubmit={handleSubmit(onSubmit)}>
         <Input
           label="E-mail"
-          type="email"
+          type="text"
           required
           fieldName="email"
           register={register}
         />
+        {errors.email?.message && <p>{errors.email?.message}</p>}
+
         <Input
           label="Senha"
           type="password"
@@ -34,6 +43,7 @@ export function SignIn() {
           fieldName="password"
           register={register}
         />
+        {errors.password?.message && <p>{errors.password?.message}</p>}
 
         <Link to="/resetpassword" className={styles.resetPassword}>
           Esqueceu a senha?

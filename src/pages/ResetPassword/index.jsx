@@ -1,9 +1,16 @@
 import styles from './resetpassword.module.scss';
 import { Input } from '../../components/Input';
 import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { newPasswordSchema } from '../../utils/FormSchemas';
 
 export function ResetPassword() {
-  const { reset, register, handleSubmit } = useForm();
+  const {
+    reset,
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({ resolver: zodResolver(newPasswordSchema) });
 
   function onSubmit(data) {
     console.log(data);
@@ -29,6 +36,9 @@ export function ResetPassword() {
           type="password"
           register={register}
         />
+        {errors.passwordConfirm?.message && (
+          <p>{errors.passwordConfirm?.message}</p>
+        )}
 
         <button type="submit" className={styles.submitBtn}>
           Cadastre-se
