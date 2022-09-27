@@ -50,7 +50,6 @@ export function Profile() {
             fieldName="name"
             register={register}
           />
-
           <Input
             label="Seu nome de usuário"
             placeholder="Nome de usuário"
