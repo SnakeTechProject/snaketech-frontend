@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import styles from './header.module.scss';
-import { AiOutlineSearch } from 'react-icons/ai';
 const NavLinks = (props) => {
   return (
     <div className={styles.navlinksContainer}>
@@ -41,10 +40,6 @@ const NavLinks = (props) => {
           </NavLink>
         </li>
       </ul>
-      <div className={styles.search}>
-        <AiOutlineSearch size={20} className={styles.iconSearch} />
-        <input placeholder="Buscar" type="text" name="search" id="search" />
-      </div>
     </div>
   );
 };
