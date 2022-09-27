@@ -26,45 +26,104 @@
   background-color: $black;
   display: flex;
   justify-content: space-evenly;
+
   h1 {
     font-size: 1.5rem;
     font-weight: 500;
     color: $white;
-    border-bottom: 3px solid #FF3D00;
+    border-bottom: 3px solid #ff3d00;
     margin-top: 30px;
     margin-bottom: 34px;
     text-align: center;
     width: min-content;
     white-space: nowrap;
   }
+
   .newsContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-      .cardsNewsContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-      }
+    .cardsNewsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
   }
+
   .jobsContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-      .cardsJobsContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-      }
+    .cardsJobsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
   }
+
   .topViewContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-      .cardsTopViews {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
+    .cardsTopViews {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+}
+
+.formHomePage {
+  background-color: white;
+  color: black;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  h2 {
+    text-align: left;
+    width: 19%;
+  }
+
+  form {
+    width: 30vw;
+
+    fieldset {
+      border: none;
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+
+      label {
+        font-weight: bold;
       }
+
+      input {
+        background: none;
+        border: none;
+        width: 70%;
+        border-bottom: 1px solid #000000;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        outline: none;
+      }
+
+      input:hover {
+        transition: 0.3s;
+        border-color: #FF3D00;
+      }
+    }
+
+    button {
+      background-color: #FF3D00;
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 5px 15px;
+      border-radius: 20px;
+      margin-left: 54%;
+      margin-top: 4px;
+    }
   }
 }
