@@ -57,16 +57,22 @@
     flex-direction: column;
   }
 
+  .profileBtn {
+    background-color: $red;
+    color: $white;
+    text-align: center;
+    border: none;
+    display: block;
+    width: 6.125rem;
+    padding: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
   button {
     background-color: $red;
     color: $white;
     border: none;
-
-    &.profileBtn {
-      width: 6.125rem;
-      padding: 8px 0;
-      border-radius: 4px;
-    }
 
     &.submitBtn {
       width: 12.125rem;
@@ -78,5 +84,9 @@
     &:hover {
       filter: brightness(1.2);
     }
+  }
+
+  .hidden {
+    display: none;
   }
 }
