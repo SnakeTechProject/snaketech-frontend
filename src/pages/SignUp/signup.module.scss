@@ -8,6 +8,11 @@
 
   form {
     width: 100%;
+
+    > p {
+      color: $red;
+      margin-bottom: 20px;
+    }
   }
 
   .titleWrapper {

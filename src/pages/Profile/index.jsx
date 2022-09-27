@@ -2,9 +2,13 @@ import styles from './profile.module.scss';
 import { CameraIcon } from '../../components/CameraIcon';
 import { Input } from '../../components/Input';
 import { useForm } from 'react-hook-form';
+import { profileSchema } from '../../utils/FormSchemas';
+import { zodResolver } from '@hookform/resolvers/zod';
 
 export function Profile() {
-  const { reset, register, handleSubmit } = useForm();
+  const { reset, register, handleSubmit } = useForm({
+    resolver: zodResolver(profileSchema),
+  });
 
   function onSubmit(data) {
     console.log(data);
@@ -52,12 +56,14 @@ export function Profile() {
             fieldName="username"
             register={register}
           />
+
           <Input
             label="Sua formação"
             placeholder="Formação"
-            fieldName="masters"
+            fieldName="degree"
             register={register}
           />
+
           <Input
             label="Seu Linkedin"
             placeholder="Linkedin"

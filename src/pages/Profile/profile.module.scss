@@ -10,6 +10,11 @@
 
   form {
     width: 100%;
+
+    > div p {
+      color: $red;
+      margin-bottom: 20px;
+    }
   }
 
   .title {
