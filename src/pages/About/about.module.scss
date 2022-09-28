@@ -19,13 +19,13 @@
     }
     .list {
       width: 100%;
-
       font-size: 24px;
       line-height: 28px;
     }
   }
 
   .card {
+
     display: flex;
     flex-wrap: wrap;
     background-color: $gray-dark;
@@ -33,7 +33,6 @@
     border-radius: 6px;
     max-width: 619px;
     width: 90%;
-
     padding: 24px;
 
     h2 {
@@ -45,8 +44,10 @@
 
     .textImg {
       display: flex;
+
       max-width: 100%;
       flex-wrap: wrap;
+
       align-items: center;
 
       p {
@@ -55,6 +56,7 @@
         line-height: 26px;
       }
 
+
       img {
         width: 50%;
       }
@@ -62,6 +64,11 @@
 
     .btn {
       width: 100%;
+
+    }
+
+    .btn {
+
       background-color: $red;
       border: none;
       padding: 5px 70px;
@@ -70,6 +77,7 @@
       line-height: 28px;
       color: $gray-light;
       margin-top: 53px;
+
       margin-left: auto;
     }
   }
@@ -93,6 +101,7 @@
       .title {
         padding: 2rem 0rem;
       }
+
     }
   }
 }

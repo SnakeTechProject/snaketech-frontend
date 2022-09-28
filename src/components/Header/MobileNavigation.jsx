@@ -1,5 +1,5 @@
 import NavLinks from './NavLinks';
-import { NavLink } from 'react-router-dom';
+
 import styles from './header.module.scss';
 import { HiMenu } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';

@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styles from './header.module.scss';
+
 const NavLinks = (props) => {
   return (
     <div className={styles.navlinksContainer}>
