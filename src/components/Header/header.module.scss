@@ -1,11 +1,34 @@
 header {
   background-color: $gray-dark;
-  padding: 0 135px;
+
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    width: 100%;
+    gap: 20px;
+
+    input {
+      flex: 1;
+      background: none;
+      border: none;
+      border-bottom: 1px solid $red;
+      padding-left: 30px;
+      padding-bottom: 10px;
+      color: $white;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .search {
+      display: flex;
+      align-items: center;
+    }
+
+    .iconSearch {
+      color: $red;
+    }
   }
   .navlinksContainer {
     display: flex;
@@ -21,6 +44,7 @@ header {
     img {
       max-width: 70px;
       margin-right: 24px;
+      display: flex;
     }
 
     ul {
@@ -30,28 +54,8 @@ header {
       align-items: center;
     }
 
-    input {
-      background: none;
-      border: none;
-      border-bottom: 1px solid $red;
-      padding-left: 30px;
-      padding-bottom: 10px;
-      color: $white;
-      &:focus {
-        outline: none;
-      }
-    }
     .navlinks {
       display: flex;
-    }
-    .search {
-      margin-left: 40px;
-    }
-
-    .iconSearch {
-      color: $red;
-      position: absolute;
-      top: 20px;
     }
   }
 
@@ -64,11 +68,20 @@ header {
 
 @media (max-width: 812px) {
   header {
-    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
     .container {
       display: flex;
-      flex-wrap: wrap;
+      gap: 2px;
       justify-content: space-between;
+
+      img {
+        display: flex;
+        order: 1;
+      }
 
       .MobileNavigation {
         display: flex;
@@ -77,15 +90,13 @@ header {
         justify-content: center;
       }
       .hamburger {
-        display: flex;
-        position: absolute;
-        right: 0;
+        display: block;
+        left: 0;
         color: $white;
         background: none;
         border: none;
         padding: 3px 2px 2px 2px;
         border-radius: 5px;
-        margin-left: 5%;
         cursor: pointer;
       }
 
@@ -96,15 +107,23 @@ header {
         align-items: center;
       }
 
+      li {
+        border-bottom: 1px solid $red;
+        width: 100%;
+        padding: 1rem 2rem;
+        text-align: center;
+      }
+      li:last-child {
+        border-bottom: none;
+      }
+
       input {
-        width: 150px;
-        margin-right: 50px;
+        flex: 1;
       }
 
       .iconSearch {
         color: $red;
         margin-right: -25px;
-        position: absolute;
         bottom: 10px;
         display: flex;
         width: 20px;
@@ -112,6 +131,7 @@ header {
     }
 
     .NavBar {
+      order: -1;
       .Navigation {
         display: none;
       }
@@ -125,8 +145,13 @@ header {
           display: flex;
           flex-direction: column;
           position: absolute;
-          right: 15%;
-          top: 8%;
+          left: 0;
+          top: 100%;
+          padding: 1rem 0rem;
+          background-color: $gray-dark;
+
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
         }
       }
       .navlinks {
@@ -137,7 +162,7 @@ header {
       }
       .search {
         padding: 10px;
-        position: absolute;
+
         right: 20%;
         top: 2%;
         width: 70px;
@@ -152,7 +177,6 @@ header {
     .container {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
 
       ul {
         display: flex;
@@ -162,13 +186,12 @@ header {
       }
       input {
         width: 122px;
-        margin-right: 50px;
+        flex: 1;
       }
 
       .iconSearch {
         color: $red;
         margin-right: -25px;
-        position: absolute;
         bottom: 10px;
         display: flex;
       }
