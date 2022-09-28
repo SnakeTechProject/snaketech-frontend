@@ -15,7 +15,7 @@ export function AppRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         {/* <Route path="/profile" element={<Profile />} /> */}
-        <Route path="/challenge" element={<ChallengePage />} />
+        <Route path="/challenges" element={<ChallengePage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<Blog />} />
         <Route path="*" element={<NotFound />} />
