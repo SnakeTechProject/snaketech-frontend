@@ -2,3 +2,95 @@
   flex: 1;
   margin: 0 auto;
 }
+
+.welcomeContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $gray-dark;
+  width: 1168px;
+  height: 652px;
+  box-shadow: 0px 4px 0px 4px rgba(253, 249, 249, 0.25);
+  border-radius: 6px;
+  margin: 100px 0 75px 0;
+    .textContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 79px;
+      h1 {
+        font-weight: 600;
+        font-size: 3rem;
+      }
+      li {
+        font-weight: 500;
+        font-size: 2.25rem;
+        list-style-type: initial;
+        list-style-position: inside;
+      }
+    }
+}
+
+.challengeContainer {
+  h2 {
+    font-weight: 500;
+    font-size: 2.25rem;
+    margin-bottom: 32px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .radioContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 4fr;
+    gap: 32px;
+    margin-bottom: 52px;
+    .radioLabel {
+      font-weight: 500;
+      font-size: 2.25rem;
+      border: 1px solid $red;
+      border-radius: 8px;
+      padding: 5px 0px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+        input[type=radio] {
+          appearance: none;
+          color: $red;
+          width: 16px;
+          height: 16px;
+          border: 1px solid $red;
+          border-radius: 50%;
+          margin-top: 16px;
+        }
+        input[type=radio]:checked {
+          box-shadow: inset 0px 0px 0px 7px;
+        }
+    }
+  }
+  p {
+    font-weight: 500;
+    font-size: 2.25rem;
+    margin-bottom: 19px;
+  }
+  textarea[id=challengeTitle] {
+    height: 92px;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    padding: 16px 0px 0px 3px;
+  }
+  textarea[id=challengeDescription] {
+    height: 371px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    padding: 16px 0px 0px 3px;
+  }
+  input[type=submit] {
+    color: $white;
+    background-color: $red;
+    border-radius: 20px;
+    padding: 5px 15px;
+    border: none;
+    align-self: flex-end;
+  }
+}
