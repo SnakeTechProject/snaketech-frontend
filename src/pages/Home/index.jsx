@@ -16,7 +16,6 @@ import {
 export function Home() {
   return (
     <div className={styles.wrapper}>
-      <h1>Home SnakeTech</h1>
       <Challenge />
 
       <section className={styles.cardsBlogContainer}>
