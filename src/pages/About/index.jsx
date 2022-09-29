@@ -4,22 +4,17 @@ export function About() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.about}>
-        <h2 className={styles.title}>Gosta de desafios?</h2>
-        <div className={styles.list}>
-          <li>Pratique seus conhecimentos</li>
-          <li>Crie Desafios</li>
-          <li>Faça parte da comunidade Snaketech</li>
-          <li>Desafios para todos os níveis</li>
-          <li>Compartilhe com seus amigos</li>
+        <div className={styles.text}>
+          <h2 className={styles.title}>O que é SnakeTech?</h2>
+          <p>
+            SnakeTech é o seu portal de notícias sobre o mundo tech, artigos
+            sobre programação e uma área para desafios para você testar seus
+            conhecimentos.
+          </p>
         </div>
-      </div>
-      <div className={styles.card}>
-        <h2>Desafio Tech</h2>
-        <div className={styles.textImg}>
-          <p>Faça parte da comunidade SnakeTech</p>
-          <img src={img} alt="imagem" />
+        <div className={styles.img}>
+          <img src={img} alt="image-about" />
         </div>
-        <button className={styles.btn}>Participe aqui</button>
       </div>
     </div>
   );
