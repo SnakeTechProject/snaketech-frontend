@@ -63,4 +63,34 @@ const inputsAndLabels = [
   ['Mensagem*', 'Mensagem', 'Digite sua mensagem'],
 ];
 
-export { cardsBlog, cardsJobs, cardsNews, cardsViews, inputsAndLabels };
+const cardsSearch = [
+  {
+    title: 'Você conhece o Python?',
+    short:
+      'Python é uma linguagem Open-Source de propósito geral usado bastante em data science, machine learning...',
+  },
+  {
+    title: 'Você conhece o Python?',
+    short:
+      'Python é uma linguagem Open-Source de propósito geral usado bastante em data science, machine learning...',
+  },
+  {
+    title: 'Você conhece o Python?',
+    short:
+      'Python é uma linguagem Open-Source de propósito geral usado bastante em data science, machine learning...',
+  },
+  {
+    title: 'Você conhece o Python?',
+    short:
+      'Python é uma linguagem Open-Source de propósito geral usado bastante em data science, machine learning...',
+  },
+];
+
+export {
+  cardsBlog,
+  cardsJobs,
+  cardsNews,
+  cardsViews,
+  inputsAndLabels,
+  cardsSearch,
+};
