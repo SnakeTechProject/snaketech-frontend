@@ -1,0 +1,22 @@
+.wrapper {
+  flex: 1;
+  margin: 0 auto;
+}
+
+.searchFounded {
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 2rem;
+  border: 1px solid $red;
+  display: flex;
+  justify-content: center;
+  background-color: $gray-dark;
+}
+
+.searchCard {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
