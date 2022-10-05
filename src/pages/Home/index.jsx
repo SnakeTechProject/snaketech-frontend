@@ -64,7 +64,7 @@ export function Home() {
           alt="character"
         />
         <h2>Dúvidas e sugestões? Entre em contato conosco</h2>
-        <form>
+        <form className={styles.form}>
           {inputsAndLabels.map((item, i) => (
             <>
               <fieldset key={i}>

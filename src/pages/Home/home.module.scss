@@ -5,10 +5,10 @@
 .cardsBlogContainer {
   background-color: $white;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 11px;
   width: 100%;
-  position: relative;
 }
 
 .cardsBlogContainer::before {
@@ -25,7 +25,9 @@
 .apiContainer {
   background-color: $black;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-bottom: 10px;
 
   h1 {
     font-size: 1.5rem;
@@ -76,22 +78,28 @@
 .formHomePage {
   background-color: white;
   color: black;
-  height: 60vh;
+  padding: 20px 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 
   h2 {
     text-align: left;
-    width: 19%;
+    max-width: 290px;
   }
 
   form {
-    width: 30vw;
-
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     fieldset {
       border: none;
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
       margin: 20px 0;
 
@@ -102,7 +110,7 @@
       input {
         background: none;
         border: none;
-        width: 70%;
+        width: 411px;
         border-bottom: 1px solid #000000;
         padding-bottom: 10px;
         margin-top: 10px;
@@ -111,12 +119,12 @@
 
       input:hover {
         transition: 0.3s;
-        border-color: #FF3D00;
+        border-color: #ff3d00;
       }
     }
 
     button {
-      background-color: #FF3D00;
+      background-color: #ff3d00;
       border: none;
       color: white;
       font-weight: bold;
@@ -124,6 +132,21 @@
       border-radius: 20px;
       margin-left: 54%;
       margin-top: 4px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .formHomePage {
+    form {
+      max-width: 50%;
+      justify-content: flex-start;
+      fieldset {
+        margin-left: -70px;
+
+        input {
+          width: 250px;
+        }
+      }
     }
   }
 }

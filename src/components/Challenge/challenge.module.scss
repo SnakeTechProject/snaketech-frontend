@@ -1,97 +1,102 @@
-.challenge{
+.challenge {
   width: 100%;
-  height: 594px;
+  padding: 20px;
   background-color: $black;
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   align-items: center;
   justify-content: space-around;
 
-.text{
-  margin-top: -90px;
-  margin-left: 100px;
+  .text {
+    ul {
+      margin: 69px 0 0 25px;
 
-  ul {
-    margin: 69px 0 0 25px;
+      li {
+        list-style: disc;
 
-    li{
-    list-style: disc;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
+    h1 {
+      font-weight: 450;
     }
   }
 
-  h1{
-    font-weight: 450;
-  }
+  .card {
+    max-width: 619px;
+    max-height: 418px;
+    background-color: $gray-dark;
+    background: #303030;
+    box-shadow: 0px 4px 0px 4px rgba(253, 249, 249, 0.25);
+    border-radius: 6px;
+    margin-top: 50px;
+    a {
+      max-width: 287px;
+      max-height: 28px;
+      background-color: $red;
+      padding: 20px 70px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px auto;
 
-}
+      span {
+        font-size: 24px;
+        font-family: 'Roboto';
+        font-weight: 400;
+      }
 
-.card{
-  width: 619px;
-  height: 418px;
-  background-color: $gray-dark;
-  background: #303030;
-  box-shadow: 0px 4px 0px 4px rgba(253, 249, 249, 0.25);
-  border-radius: 6px;
-  margin-top: -30px;
-  margin-left: 100px;
-  position: relative;
+      &:hover {
+        transition: 0.5s;
+        background-color: #ff7539;
+      }
+    }
 
-  a{
-    width: 287px;
-    height: 28px;
-    background-color: $red;
-    padding: 20px 70px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: relative;
-
-    span{
-      font-size: 24px;
+    h1 {
+      margin: 20px;
       font-family: 'Roboto';
-      font-weight: 400;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 38px;
     }
 
-    &:hover{
-      transition: 0.5s;
-      background-color: #FF7539;
+    .container {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 58px;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 295px;
+        max-height: 221px;
+      }
+
+      h2 {
+        font-weight: 300;
+        max-width: 285px;
+        margin-left: 20px;
+      }
     }
   }
-
-  h1{
-    margin: 20px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
-  }
-
-  .container{
-    margin-top: 15%;
-    display: flex;
-    align-items: center;
-    margin-top: 5%;
-
-    h2{
-      font-weight: 300;
-      width: 50%;
-      margin-left: 20px;
-    }
-
-
-  }
-
 }
 
+@media (max-width: 480px) {
+  .challenge {
+    .card {
+      max-width: 335px;
+      max-height: 600px;
+
+      .container {
+        flex-wrap: wrap;
+      }
+    }
+  }
 }
