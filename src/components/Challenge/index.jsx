@@ -23,9 +23,8 @@ export function Challenge() {
           <h2>Faça parte da comunidade SnakeTech</h2>
           <img src="/assets/img/secundary/robo.png" alt="" />
         </div>
-
         <Link to="/challenge">
-          <span>Participe aqui</span>
+          <span className={styles.btn}>Participe aqui</span>
         </Link>
       </div>
     </div>
